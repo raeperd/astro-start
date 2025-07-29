@@ -37,5 +37,5 @@ export default tseslint.config(
       // Allow some flexibility in Astro components
       '@typescript-eslint/no-unused-vars': 'warn',
     },
-  },
+  }
 );
