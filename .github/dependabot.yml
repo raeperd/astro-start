@@ -1,28 +1,19 @@
 version: 2
 updates:
-  # Enable version updates for npm (works with pnpm)
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "daily"
-    # Open pull requests for version updates
     open-pull-requests-limit: 10
-    # Group updates together
     groups:
       production-dependencies:
         dependency-type: "production"
       development-dependencies:
         dependency-type: "development"
-    # Commit message preferences
     commit-message:
       prefix: "chore"
       prefix-development: "chore"
       include: "scope"
-    # Labels for pull requests
     labels:
       - "dependencies"
-    # Ignore specific dependencies if needed (uncomment and add package names)
-    # ignore:
-    #   - dependency-name: "package-name"
-    #     update-types: ["version-update:semver-major"]
 
