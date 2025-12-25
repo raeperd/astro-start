@@ -19,7 +19,7 @@ importers:
         version: 1.13.0(crossws@0.3.5)
       '@orpc/zod':
         specifier: ^1.6.6
-        version: 1.13.0(@orpc/contract@1.13.0)(@orpc/server@1.13.0(crossws@0.3.5))(crossws@0.3.5)(zod@3.25.76)
+        version: 1.13.0(@orpc/contract@1.13.0)(@orpc/server@1.13.0(crossws@0.3.5))(crossws@0.3.5)(zod@4.2.1)
       '@tailwindcss/vite':
         specifier: ^4.1.11
         version: 4.1.18(vite@6.4.1(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.30.2))
@@ -30,8 +30,8 @@ importers:
         specifier: ^4.1.11
         version: 4.1.18
       zod:
-        specifier: ^3.25.76
-        version: 3.25.76
+        specifier: ^4.2.1
+        version: 4.2.1
     devDependencies:
       '@eslint/js':
         specifier: ^9.30.1
@@ -2401,6 +2401,9 @@ packages:
   zod@3.25.76:
     resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
+  zod@4.2.1:
+    resolution: {integrity: sha512-0wZ1IRqGGhMP76gLqz8EyfBXKk0J2qo2+H3fi4mcUP/KtTocoX08nmIAHl1Z2kJIZbZee8KOpBCSNPRgauucjw==}
+
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
@@ -2866,7 +2869,7 @@ snapshots:
     transitivePeerDependencies:
       - '@opentelemetry/api'
 
-  '@orpc/zod@1.13.0(@orpc/contract@1.13.0)(@orpc/server@1.13.0(crossws@0.3.5))(crossws@0.3.5)(zod@3.25.76)':
+  '@orpc/zod@1.13.0(@orpc/contract@1.13.0)(@orpc/server@1.13.0(crossws@0.3.5))(crossws@0.3.5)(zod@4.2.1)':
     dependencies:
       '@orpc/contract': 1.13.0
       '@orpc/json-schema': 1.13.0(crossws@0.3.5)
@@ -2875,7 +2878,7 @@ snapshots:
       '@orpc/shared': 1.13.0
       escape-string-regexp: 5.0.0
       wildcard-match: 5.1.4
-      zod: 3.25.76
+      zod: 4.2.1
     transitivePeerDependencies:
       - '@opentelemetry/api'
       - crossws
@@ -4966,5 +4969,7 @@ snapshots:
       zod: 3.25.76
 
   zod@3.25.76: {}
+
+  zod@4.2.1: {}
 
   zwitch@2.0.4: {}
