@@ -39,8 +39,6 @@ pnpm preview
 │   └── favicon.svg
 ├── src/
 │   ├── assets/
-│   ├── components/
-│   │   └── Welcome.astro
 │   ├── layouts/
 │   │   └── Layout.astro
 │   ├── pages/
