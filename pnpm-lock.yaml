@@ -8,18 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@orpc/contract':
-        specifier: ^1.6.6
-        version: 1.13.0
-      '@orpc/openapi':
-        specifier: ^1.6.6
-        version: 1.13.0(crossws@0.3.5)
-      '@orpc/server':
-        specifier: ^1.6.6
-        version: 1.13.0(crossws@0.3.5)
-      '@orpc/zod':
-        specifier: ^1.6.6
-        version: 1.13.0(@orpc/contract@1.13.0)(@orpc/server@1.13.0(crossws@0.3.5))(crossws@0.3.5)(zod@4.2.1)
       '@tailwindcss/vite':
         specifier: ^4.1.11
         version: 4.1.18(vite@6.4.1(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.30.2))
@@ -29,9 +17,6 @@ importers:
       tailwindcss:
         specifier: ^4.1.11
         version: 4.1.18
-      zod:
-        specifier: ^4.2.1
-        version: 4.2.1
     devDependencies:
       '@eslint/js':
         specifier: ^9.30.1
@@ -482,73 +467,6 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@orpc/client@1.13.0':
-    resolution: {integrity: sha512-50MWjaQrz+eSSymmcJuzF+1mHSgObAKht0KpizA2+ZxpFpeyIYX1JGGvDPILYtHp7EyIOoN5ngwp7j/RHc7UeQ==}
-
-  '@orpc/contract@1.13.0':
-    resolution: {integrity: sha512-lNzIuR1Ezcbo0AkavtnPVC1JKHwmVqzBPPCQsmTnwmF27lu+Ks/rDtgjAipN/7x0GOt0m6B7uALJHI5nEzGJGQ==}
-
-  '@orpc/interop@1.13.0':
-    resolution: {integrity: sha512-bVTef8NCGhDYPHVrx+/mn1Hnxm+99IVzjTT94dZsdGe4tB6+9Eb+ihYfhglu+z9bvskWVPHd68DNKKy/XgSPDA==}
-
-  '@orpc/json-schema@1.13.0':
-    resolution: {integrity: sha512-IIFBbdC9oDJmoy4eZG4mcaD5onBZid2My6h6OEA2eKzPPUjj3oZ7OdqY8tED+tp4dGxQGwLxZjuFiKkIacXn+Q==}
-
-  '@orpc/openapi-client@1.13.0':
-    resolution: {integrity: sha512-35wkCS2xNNyXzA+xOtuBdOeJkfVQiU0BV5WsmDaB2irN1iPMSiCRTlL4zWWT884LConYNhv+CllXQydfCTjRwA==}
-
-  '@orpc/openapi@1.13.0':
-    resolution: {integrity: sha512-77HNkoNoFkwms/GnX/B/PeSEOKkyGEk9HBkqzihzs7juLPWQiaddGo1lS00zLYuHaquVKZoAN8BgJVEvV9nWaA==}
-
-  '@orpc/server@1.13.0':
-    resolution: {integrity: sha512-Bj/Kdp0RRQ4IZpmuKxpIXSmgcjTUUXE4CHkz9tX05CqoNV0Tdtw3Yz2WEbf5PLyg+3LlWs2+yVw4mCdeJTYLeg==}
-    peerDependencies:
-      crossws: '>=0.3.4'
-      ws: '>=8.18.1'
-    peerDependenciesMeta:
-      crossws:
-        optional: true
-      ws:
-        optional: true
-
-  '@orpc/shared@1.13.0':
-    resolution: {integrity: sha512-NHch9ug7fX2CJNDUXNGxPRgNWmMAdIVuWpaRL04NiVKRQ1xK17NPcRzjr01cPvEbX9qwEUlhB2USU6MXWJ47rw==}
-    peerDependencies:
-      '@opentelemetry/api': '>=1.9.0'
-    peerDependenciesMeta:
-      '@opentelemetry/api':
-        optional: true
-
-  '@orpc/standard-server-aws-lambda@1.13.0':
-    resolution: {integrity: sha512-tutin8RFliIMASUUI3H9AWho18NAl8GTIS7+olxAwsj6LYFelU+DBDm/eVSvWDzCCR73dFmbco+1QWByYnDstg==}
-
-  '@orpc/standard-server-fastify@1.13.0':
-    resolution: {integrity: sha512-2PCMA5QBtShgBLQYk4zS5qJPweNbgYGPlgyWycJ4t+ooKUkjWfoj15v00O72mWjWUjmOc88Z2RfqYIR7FItUHw==}
-    peerDependencies:
-      fastify: '>=5.6.1'
-    peerDependenciesMeta:
-      fastify:
-        optional: true
-
-  '@orpc/standard-server-fetch@1.13.0':
-    resolution: {integrity: sha512-g5rHY64YuDsuUIQm2en0uI9ioEErwE6sByGHZ1Plak/Y+g19sFZs44Y1AmstS5q5coE+oEudpwhYrUTLjyggwQ==}
-
-  '@orpc/standard-server-node@1.13.0':
-    resolution: {integrity: sha512-CSC9AKvf7XQZhmrDi3MYIS39hYvLRI0Z3d+Z/xplGiQAFPiInONypTAKYGFMSrlSJExxoqtwof3vmwGHrZJgXA==}
-
-  '@orpc/standard-server-peer@1.13.0':
-    resolution: {integrity: sha512-J8Z2Xl9CMAjxVPBZApBk3Pw46NAvUq/uDGFwR5udGt6Eq97w4Mz2uACvezpS13hn/r6CHDUQpErvmdAQ9AxN9A==}
-
-  '@orpc/standard-server@1.13.0':
-    resolution: {integrity: sha512-Sh+Vz8FiEkXJpaIERoUAe99GAK5xAN8dGl2SwkzAWm6QYex7pXVThaVOSuIG2X5UdYnkSehOB4e6/b3/lbiCNw==}
-
-  '@orpc/zod@1.13.0':
-    resolution: {integrity: sha512-H4EdeynSp9o6WYhVweXoeWx2XxiozZPHB4eHLCBUUgKoGytmqviwvoy6yj2wdyMqM7GGxMzl3XVDXSIyx8qKGg==}
-    peerDependencies:
-      '@orpc/contract': 1.13.0
-      '@orpc/server': 1.13.0
-      zod: '>=3.25.0'
-
   '@oslojs/encoding@1.1.0':
     resolution: {integrity: sha512-70wQhgYmndg4GCPxPPxPGevRKqTIJ2Nh4OkiMWmDAVYsTQ+Ta7Sq+rPevXyXGdzr30/qZBnyOalCszoMxlyldQ==}
 
@@ -695,9 +613,6 @@ packages:
 
   '@shikijs/vscode-textmate@10.0.2':
     resolution: {integrity: sha512-83yeghZ2xxin3Nj8z1NMd/NCuca+gsYXswywDy5bHvwlWL8tpTQmzGeUuHd9FC3E/SBEMvzJRwWEOz5gGes9Qg==}
-
-  '@standard-schema/spec@1.1.0':
-    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
   '@swc/helpers@0.5.17':
     resolution: {integrity: sha512-5IKx/Y13RsYd+sauPb2x+U/xZikHjolzfuDgTAl/Tdf3Q8rslRvC19NKDLgAJQ6wsqADk10ntlv08nPFw/gO/A==}
@@ -1461,9 +1376,6 @@ packages:
   json-schema-traverse@0.4.1:
     resolution: {integrity: sha512-xbbCH5dCYU5T8LcEhhuh7HJ88HXuW3qsI3Y0zOZFKfZEHcpWiHU/Jxzk629Brsab/mMiHQti9wMP+845RPe3Vg==}
 
-  json-schema-typed@8.0.2:
-    resolution: {integrity: sha512-fQhoXdcvc3V28x7C7BMs4P5+kNlgUURe2jmUT1T//oBRMDrqy1QPelJimwZGo7Hg9VPV3EQV5Bnq4hbFy2vetA==}
-
   json-stable-stringify-without-jsonify@1.0.1:
     resolution: {integrity: sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==}
 
@@ -1761,9 +1673,6 @@ packages:
   oniguruma-to-es@4.3.4:
     resolution: {integrity: sha512-3VhUGN3w2eYxnTzHn+ikMI+fp/96KoRSVK9/kMTcFqj1NRDh2IhQCKvYxDnWePKRXY/AqH+Fuiyb7VHSzBjHfA==}
 
-  openapi-types@12.1.3:
-    resolution: {integrity: sha512-N4YtSYJqghVu4iek2ZUvcN/0aqH1kRDuNqzcycDxhOUpg7GdvLa2F3DgS6yBNhInhv2r/6I0Flkn7CqL8+nIcw==}
-
   optionator@0.9.4:
     resolution: {integrity: sha512-6IpQ7mKUxRcZNLIObR0hz7lxsapSSIYNZJwXPGeF0mTVqGKFIXj1DQcMoT22S3ROcLyY/rz0PWaWZ9ayWmad9g==}
     engines: {node: '>= 0.8.0'}
@@ -1920,10 +1829,6 @@ packages:
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
-  radash@12.1.1:
-    resolution: {integrity: sha512-h36JMxKRqrAxVD8201FrCpyeNuUY9Y5zZwujr20fFO77tpUtGa6EZzfKw/3WaiBX95fq7+MpsuMLNdSnORAwSA==}
-    engines: {node: '>=14.18.0'}
-
   radix3@1.1.2:
     resolution: {integrity: sha512-b484I/7b8rDEdSDKckSSBA8knMpcdsXudlE/LNL639wFoHKwLbEkQFZHWEYwDC0wa0FKUcCY+GAF73Z7wxNVFA==}
 
@@ -1995,9 +1900,6 @@ packages:
     resolution: {integrity: sha512-3nk8Y3a9Ea8szgKhinMlGMhGMw89mqule3KWczxhIzqudyHdCIOHw8WJlj/r329fACjKLEh13ZSk7oE22kyeIw==}
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
-
-  rou3@0.7.12:
-    resolution: {integrity: sha512-iFE4hLDuloSWcD7mjdCDhx2bKcIsYbtOTpfH5MHHLSKMOUyjqQXTeZVa289uuwEGEKFoE/BAPbhaU4B774nceg==}
 
   run-parallel@1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
@@ -2084,10 +1986,6 @@ packages:
     resolution: {integrity: sha512-MeQTA1r0litLUf0Rp/iisCaL8761lKAZHaimlbGK4j0HysC4PLfqygQj9srcs0m2RdtDYnF8UuYyKpbjHYp7Jw==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
-  tagged-tag@1.0.0:
-    resolution: {integrity: sha512-yEFYrVhod+hdNyx7g5Bnkkb0G6si8HJurOoOEgC8B/O0uXLHlaey/65KRv6cuWBNhBgHKAROVpc7QyYqE5gFng==}
-    engines: {node: '>=20'}
-
   tailwindcss@4.1.18:
     resolution: {integrity: sha512-4+Z+0yiYyEtUVCScyfHCxOYP06L5Ne+JiHhY2IjR2KWMIWhJOYZKLSGZaP5HkZ8+bY0cxfzwDE5uOmzFXyIwxw==}
 
@@ -2142,10 +2040,6 @@ packages:
   type-fest@4.41.0:
     resolution: {integrity: sha512-TeTSQ6H5YHvpqVwBRcnLDCBnDOHWYu7IvGbHT6N8AOymcr9PJGjc1GTtiWZTYg0NCgYwvnYWEkVChQAr9bjfwA==}
     engines: {node: '>=16'}
-
-  type-fest@5.3.1:
-    resolution: {integrity: sha512-VCn+LMHbd4t6sF3wfU/+HKT63C9OoyrSIf4b+vtWHpt2U7/4InZG467YDNMFMR70DdHjAdpPWmw2lzRdg0Xqqg==}
-    engines: {node: '>=20'}
 
   typescript-eslint@8.50.1:
     resolution: {integrity: sha512-ytTHO+SoYSbhAH9CrYnMhiLx8To6PSSvqnvXyPUgPETCvB6eBKmTI9w6XMPS3HsBRGkwTVBX+urA8dYQx6bHfQ==}
@@ -2351,9 +2245,6 @@ packages:
     resolution: {integrity: sha512-c9bZp7b5YtRj2wOe6dlj32MK+Bx/M/d+9VB2SHM1OtsUHR0aV0tdP6DWh/iMt0kWi1t5g1Iudu6hQRNd1A4PVA==}
     engines: {node: '>=18'}
 
-  wildcard-match@5.1.4:
-    resolution: {integrity: sha512-wldeCaczs8XXq7hj+5d/F38JE2r7EXgb6WQDM84RVwxy81T/sxB5e9+uZLK9Q9oNz1mlvjut+QtvgaOQFPVq/g==}
-
   word-wrap@1.2.5:
     resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
     engines: {node: '>=0.10.0'}
@@ -2398,9 +2289,6 @@ packages:
 
   zod@3.25.76:
     resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
-
-  zod@4.2.1:
-    resolution: {integrity: sha512-0wZ1IRqGGhMP76gLqz8EyfBXKk0J2qo2+H3fi4mcUP/KtTocoX08nmIAHl1Z2kJIZbZee8KOpBCSNPRgauucjw==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -2738,151 +2626,6 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.1
 
-  '@orpc/client@1.13.0':
-    dependencies:
-      '@orpc/shared': 1.13.0
-      '@orpc/standard-server': 1.13.0
-      '@orpc/standard-server-fetch': 1.13.0
-      '@orpc/standard-server-peer': 1.13.0
-    transitivePeerDependencies:
-      - '@opentelemetry/api'
-
-  '@orpc/contract@1.13.0':
-    dependencies:
-      '@orpc/client': 1.13.0
-      '@orpc/shared': 1.13.0
-      '@standard-schema/spec': 1.1.0
-      openapi-types: 12.1.3
-    transitivePeerDependencies:
-      - '@opentelemetry/api'
-
-  '@orpc/interop@1.13.0': {}
-
-  '@orpc/json-schema@1.13.0(crossws@0.3.5)':
-    dependencies:
-      '@orpc/contract': 1.13.0
-      '@orpc/interop': 1.13.0
-      '@orpc/openapi': 1.13.0(crossws@0.3.5)
-      '@orpc/server': 1.13.0(crossws@0.3.5)
-      '@orpc/shared': 1.13.0
-      json-schema-typed: 8.0.2
-    transitivePeerDependencies:
-      - '@opentelemetry/api'
-      - crossws
-      - fastify
-      - ws
-
-  '@orpc/openapi-client@1.13.0':
-    dependencies:
-      '@orpc/client': 1.13.0
-      '@orpc/contract': 1.13.0
-      '@orpc/shared': 1.13.0
-      '@orpc/standard-server': 1.13.0
-    transitivePeerDependencies:
-      - '@opentelemetry/api'
-
-  '@orpc/openapi@1.13.0(crossws@0.3.5)':
-    dependencies:
-      '@orpc/client': 1.13.0
-      '@orpc/contract': 1.13.0
-      '@orpc/interop': 1.13.0
-      '@orpc/openapi-client': 1.13.0
-      '@orpc/server': 1.13.0(crossws@0.3.5)
-      '@orpc/shared': 1.13.0
-      '@orpc/standard-server': 1.13.0
-      json-schema-typed: 8.0.2
-      rou3: 0.7.12
-    transitivePeerDependencies:
-      - '@opentelemetry/api'
-      - crossws
-      - fastify
-      - ws
-
-  '@orpc/server@1.13.0(crossws@0.3.5)':
-    dependencies:
-      '@orpc/client': 1.13.0
-      '@orpc/contract': 1.13.0
-      '@orpc/interop': 1.13.0
-      '@orpc/shared': 1.13.0
-      '@orpc/standard-server': 1.13.0
-      '@orpc/standard-server-aws-lambda': 1.13.0
-      '@orpc/standard-server-fastify': 1.13.0
-      '@orpc/standard-server-fetch': 1.13.0
-      '@orpc/standard-server-node': 1.13.0
-      '@orpc/standard-server-peer': 1.13.0
-      cookie: 1.1.1
-    optionalDependencies:
-      crossws: 0.3.5
-    transitivePeerDependencies:
-      - '@opentelemetry/api'
-      - fastify
-
-  '@orpc/shared@1.13.0':
-    dependencies:
-      radash: 12.1.1
-      type-fest: 5.3.1
-
-  '@orpc/standard-server-aws-lambda@1.13.0':
-    dependencies:
-      '@orpc/shared': 1.13.0
-      '@orpc/standard-server': 1.13.0
-      '@orpc/standard-server-fetch': 1.13.0
-      '@orpc/standard-server-node': 1.13.0
-    transitivePeerDependencies:
-      - '@opentelemetry/api'
-
-  '@orpc/standard-server-fastify@1.13.0':
-    dependencies:
-      '@orpc/shared': 1.13.0
-      '@orpc/standard-server': 1.13.0
-      '@orpc/standard-server-node': 1.13.0
-    transitivePeerDependencies:
-      - '@opentelemetry/api'
-
-  '@orpc/standard-server-fetch@1.13.0':
-    dependencies:
-      '@orpc/shared': 1.13.0
-      '@orpc/standard-server': 1.13.0
-    transitivePeerDependencies:
-      - '@opentelemetry/api'
-
-  '@orpc/standard-server-node@1.13.0':
-    dependencies:
-      '@orpc/shared': 1.13.0
-      '@orpc/standard-server': 1.13.0
-      '@orpc/standard-server-fetch': 1.13.0
-    transitivePeerDependencies:
-      - '@opentelemetry/api'
-
-  '@orpc/standard-server-peer@1.13.0':
-    dependencies:
-      '@orpc/shared': 1.13.0
-      '@orpc/standard-server': 1.13.0
-    transitivePeerDependencies:
-      - '@opentelemetry/api'
-
-  '@orpc/standard-server@1.13.0':
-    dependencies:
-      '@orpc/shared': 1.13.0
-    transitivePeerDependencies:
-      - '@opentelemetry/api'
-
-  '@orpc/zod@1.13.0(@orpc/contract@1.13.0)(@orpc/server@1.13.0(crossws@0.3.5))(crossws@0.3.5)(zod@4.2.1)':
-    dependencies:
-      '@orpc/contract': 1.13.0
-      '@orpc/json-schema': 1.13.0(crossws@0.3.5)
-      '@orpc/openapi': 1.13.0(crossws@0.3.5)
-      '@orpc/server': 1.13.0(crossws@0.3.5)
-      '@orpc/shared': 1.13.0
-      escape-string-regexp: 5.0.0
-      wildcard-match: 5.1.4
-      zod: 4.2.1
-    transitivePeerDependencies:
-      - '@opentelemetry/api'
-      - crossws
-      - fastify
-      - ws
-
   '@oslojs/encoding@1.1.0': {}
 
   '@pkgr/core@0.2.9': {}
@@ -2993,8 +2736,6 @@ snapshots:
       '@types/hast': 3.0.4
 
   '@shikijs/vscode-textmate@10.0.2': {}
-
-  '@standard-schema/spec@1.1.0': {}
 
   '@swc/helpers@0.5.17':
     dependencies:
@@ -3919,8 +3660,6 @@ snapshots:
 
   json-schema-traverse@0.4.1: {}
 
-  json-schema-typed@8.0.2: {}
-
   json-stable-stringify-without-jsonify@1.0.1: {}
 
   keyv@4.5.4:
@@ -4375,8 +4114,6 @@ snapshots:
       regex: 6.1.0
       regex-recursion: 6.0.2
 
-  openapi-types@12.1.3: {}
-
   optionator@0.9.4:
     dependencies:
       deep-is: 0.1.4
@@ -4477,8 +4214,6 @@ snapshots:
   punycode@2.3.1: {}
 
   queue-microtask@1.2.3: {}
-
-  radash@12.1.1: {}
 
   radix3@1.1.2: {}
 
@@ -4619,8 +4354,6 @@ snapshots:
       '@rollup/rollup-win32-x64-msvc': 4.54.0
       fsevents: 2.3.3
 
-  rou3@0.7.12: {}
-
   run-parallel@1.2.0:
     dependencies:
       queue-microtask: 1.2.3
@@ -4741,8 +4474,6 @@ snapshots:
     dependencies:
       '@pkgr/core': 0.2.9
 
-  tagged-tag@1.0.0: {}
-
   tailwindcss@4.1.18: {}
 
   tapable@2.3.0: {}
@@ -4779,10 +4510,6 @@ snapshots:
       prelude-ls: 1.2.1
 
   type-fest@4.41.0: {}
-
-  type-fest@5.3.1:
-    dependencies:
-      tagged-tag: 1.0.0
 
   typescript-eslint@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.8.3):
     dependencies:
@@ -4935,8 +4662,6 @@ snapshots:
     dependencies:
       string-width: 7.2.0
 
-  wildcard-match@5.1.4: {}
-
   word-wrap@1.2.5: {}
 
   wrap-ansi@9.0.2:
@@ -4969,7 +4694,5 @@ snapshots:
       zod: 3.25.76
 
   zod@3.25.76: {}
-
-  zod@4.2.1: {}
 
   zwitch@2.0.4: {}
