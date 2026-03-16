@@ -24,6 +24,7 @@ export default defineConfig({
       workbox: {
         globPatterns: [],
         runtimeCaching: [],
+        navigateFallback: null,
       },
     }),
   ],
