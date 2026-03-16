@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { pwaInfo } from 'virtual:pwa-info';
 ---
 
 <!doctype html>
@@ -8,11 +9,15 @@ import '../styles/global.css';
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/pwa-192x192.png" />
+    <meta name="theme-color" content="#ffffff" />
     <meta name="generator" content={Astro.generator} />
     <title>Astro Start</title>
     <meta name="description" content="A modern, minimal Astro template built with Tailwind CSS" />
+    {pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
   </head>
   <body class="min-h-screen bg-gray-50 text-gray-900">
     <slot />
+    <script src="/src/pwa.ts"></script>
   </body>
 </html>
