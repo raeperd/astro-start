@@ -23,14 +23,14 @@
   "packageManager": "pnpm@10.11.1+sha512.e519b9f7639869dc8d5c3c5dfef73b3f091094b0a006d7317353c72b124e80e1afd429732e28705ad6bfa1ee879c1fce46c128ccebd3192101f43dd67c667912",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@vite-pwa/astro": "^1.2.0",
-    "eslint": "^10.13.0",
+    "@vite-pwa/astro": "^2.0.0",
+    "eslint": "^10.14.0",
     "eslint-plugin-astro": "^3.2.1",
-    "globals": "^17.13.0",
+    "globals": "^17.14.0",
     "prettier": "^3.9.10",
     "prettier-plugin-astro": "^1.1.2",
     "prettier-plugin-tailwindcss": "^0.8.1",
-    "typescript-eslint": "^8.72.0",
+    "typescript-eslint": "^8.72.1",
     "vite-plugin-pwa": "^2.0.0",
     "workbox-build": "^7.4.1",
     "workbox-window": "^7.4.1"
